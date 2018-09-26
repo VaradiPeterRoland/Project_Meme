@@ -41,8 +41,8 @@ def main():
         handle_menu()
         try:
             choose()
-        except KeyError as err:
-            Meme_UI.print_error_message(str(err))
+        except:
+            raise KeyError("There is no such option.")
 
 
 if __name__ == '__main__':
