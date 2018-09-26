@@ -19,7 +19,7 @@ def choose():
     elif option == "4":
         get_random_meme_sound()
     elif option == "5":
-        meme_virus(20)
+        meme_virus(10)
     elif option == "0":
         sys.exit(0)
     else:

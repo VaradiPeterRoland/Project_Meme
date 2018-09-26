@@ -15,7 +15,7 @@ def meme_virus(how_many):
 
 
 def main():
-    meme_virus(20)
+    meme_virus(10)
 
 
 if __name__ == '__main__':
