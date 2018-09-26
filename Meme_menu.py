@@ -1,20 +1,25 @@
 import sys
 import Meme_UI
+from virus import meme_virus
+from best_game import best_game
+from ninegag import get_fresh_meme
+from random_meme_sound import get_random_meme_sound
+from hymn import meme_hymn
 
 
 def choose():
     inputs = Meme_UI.get_inputs(["Please enter a number: "], "")
     option = inputs[0]
     if option == "1":
-        best_game_ever.start_module()
+        best_game()
     elif option == "2":
-        nine_gag.start_module()
+        get_fresh_meme()
     elif option == "3":
-        hymn.start_module()
+        meme_hymn()
     elif option == "4":
-        random_meme_sound.start_module()
+        get_random_meme_sound()
     elif option == "5":
-        virus.start_module()
+        meme_virus(20)
     elif option == "0":
         sys.exit(0)
     else:
@@ -24,8 +29,8 @@ def choose():
 def handle_menu():
     options = ["Best Game Ever",
                "9gag Dank Memes",
-               "Random Meme Sound For Random Fun"
-               "Russian Hymn",
+               "Meme Hymn",
+               "Random Meme Sound For Random Fun",
                "Virus"]
 
     Meme_UI.print_menu("Meme Menu", options, "Exit Program")

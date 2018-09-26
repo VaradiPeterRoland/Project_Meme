@@ -2,14 +2,14 @@ import webbrowser
 import time
 
 
-def best_game():
+def get_fresh_meme():
     new = 2
-    url = ("https://scratch.mit.edu/projects/235217863/")
+    url = ("https://9gag.com/tag/fresh-meme?ref=search")
     webbrowser.open(url, new=new)
 
 
 def main():
-    best_game()
+    get_fresh_meme()
 
 
 if __name__ == '__main__':

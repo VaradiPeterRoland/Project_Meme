@@ -1,15 +1,14 @@
 import webbrowser
-import time
 
 
-def best_game():
+def meme_hymn():
     new = 2
-    url = ("https://scratch.mit.edu/projects/235217863/")
+    url = ("https://www.youtube.com/watch?v=0dMIjN18uMI")
     webbrowser.open(url, new=new)
 
 
 def main():
-    best_game()
+    meme_hymn()
 
 
 if __name__ == '__main__':
